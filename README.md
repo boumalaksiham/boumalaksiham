@@ -59,7 +59,7 @@ CNN trained from scratch on 13,440 labeled images across all 28 Arabic character
 
 ### LLM Systems & Observability
 
-**[AI Guardian — LLM Observability Platform](https://github.com/boumalaksiham/AI-Guardian)**
+**[AI Guardian — LLM Observability Platform](https://github.com/boumalaksiham/ai_guardian_project)**
 Production-grade monitoring for LLM applications. Python SDK (`@track_llm_call`) captures latency, token usage, cost, quality scores, and hallucination risk without changing application code. Threshold-based alerting, RAG pipeline tracing, live React dashboard via WebSockets.
 `FastAPI` `PostgreSQL` `React` `Python SDK` `LangChain` · **Works with any LLM provider**
 
