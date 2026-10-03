@@ -19,7 +19,7 @@ Previously, I investigated multi-agent LLM systems at Schneider Electric through
 | [Nexus-AI](https://github.com/boumalaksiham/Nexus-AI-Attendance) | Combine face recognition and conversational attendance support. | Undergraduate honors thesis using Flask, SQLite, OpenCV, dlib face embeddings, and specialized agents. The published source has restoration gaps documented in its README. |
 | [Gene Expression Classification](https://github.com/boumalaksiham/gene-expression-classification) | Compare classifiers for ALL versus AML using high-dimensional microarray data. | scikit-learn pipelines, feature selection within cross-validation, logistic regression, Random Forest, and XGBoost. |
 | [Breast Cancer Transcriptomics](https://github.com/boumalaksiham/breast_cancer_transcriptomics) | Explore tumor-normal expression differences in a processed GSE42568 subset. | PCA, Welch's tests, Benjamini–Hochberg correction, annotation, and pathway enrichment. |
-| [Interactive BI Dashboard](https://github.com/boumalaksiham/interactive-BI-dashboard) | Turn uploaded business data into interactive analysis and visualizations. | Streamlit, pandas, Plotly, and modular processing and insights code. |
+| [Interactive BI Dashboard](https://github.com/boumalaksiham/interactive-BI-dashboard) | Turn uploaded business data into interactive analysis and visualizations. | Gradio, pandas, Plotly, and modular processing and insights code. |
 
 ## More projects
 
