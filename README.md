@@ -1,106 +1,62 @@
 # Siham Boumalak
 
-**M.S. Artificial Intelligence · Northeastern University, Khoury College · Expected 2027**
+**M.S. candidate in Artificial Intelligence · Northeastern University · Machine Learning concentration · Expected 2027**
 
-I build end-to-end ML systems — from research and modeling to deployment and observability. My work spans NLP, computer vision, multi-agent LLM systems, and applied data science. Previously at Schneider Electric building production LLM pipelines.
+I work at the intersection of applied AI research, data analysis, and software development. I am interested in asking useful questions, designing careful experiments, and building systems whose behavior can be evaluated and explained.
 
-Open to: **AI/ML Engineering · Applied Research · Data Science · Data Analysis** internships and co-ops · F-1 CPT eligible · Boston, MA
+At Northeastern, my research apprenticeship examines privacy and safety risks of LLM-based voice assistants, with a current focus on privacy across users in shared households. I also serve as a Teaching Assistant for **CS 3200: Introduction to Databases**.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Siham_Boumalak-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/siham-boumalak-11014b210)
-[![Portfolio](https://img.shields.io/badge/Portfolio-boumalaksiham.github.io-378ADD?style=flat-square)](https://boumalaksiham.github.io)
+Previously, I investigated multi-agent LLM systems at Schneider Electric through the College of Wooster's Applied Methods and Research Experience program. Our team evaluated models and agent frameworks for reliability, reasoning quality, latency, and cost, and shared findings with the data science team.
 
----
+[LinkedIn](https://www.linkedin.com/in/siham-boumalak/) · [Portfolio](https://boumalaksiham.github.io/) · [All repositories](https://github.com/boumalaksiham?tab=repositories)
 
-## What I work on
+## Selected projects
 
-```
-NLP & Text          →  fine-tuning BERT/DistilBERT, NER, text classification, ROUGE evaluation
-Computer Vision     →  CNNs, EfficientNet, OpenCV, image quality scoring, facial recognition
-LLM Systems         →  multi-agent pipelines, RAG, LLM observability, hallucination detection
-Data Science        →  clustering, regression, A/B testing, forecasting, Tableau dashboards
-Deep Learning       →  PyTorch, HuggingFace, transfer learning, ablation studies
-```
+| Project | Question or purpose | Implementation |
+|---|---|---|
+| [Scientific Paper Triage](https://github.com/boumalaksiham/Final-Project-AI) | Help researchers assess a paper's contribution, methods, limitations, and relevance. | BART, spaCy, NetworkX; modular components, baseline comparisons, and ablation scripts. |
+| [AI Guardian](https://github.com/boumalaksiham/ai_guardian_project) | Make LLM latency, token usage, estimated cost, failures, and workflow traces visible. | Python SDK, FastAPI, PostgreSQL, React; an engineering prototype with heuristic evaluation signals and a polling dashboard. |
+| [Nexus-AI](https://github.com/boumalaksiham/Nexus-AI-Attendance) | Combine face recognition and conversational attendance support. | Undergraduate honors thesis using Flask, SQLite, OpenCV, dlib face embeddings, and specialized agents. The published source has restoration gaps documented in its README. |
+| [Gene Expression Classification](https://github.com/boumalaksiham/gene-expression-classification) | Compare classifiers for ALL versus AML using high-dimensional microarray data. | scikit-learn pipelines, feature selection within cross-validation, logistic regression, Random Forest, and XGBoost. |
+| [Breast Cancer Transcriptomics](https://github.com/boumalaksiham/breast_cancer_transcriptomics) | Explore tumor-normal expression differences in a processed GSE42568 subset. | PCA, Welch's tests, Benjamini–Hochberg correction, annotation, and pathway enrichment. |
+| [Interactive BI Dashboard](https://github.com/boumalaksiham/interactive-BI-dashboard) | Turn uploaded business data into interactive analysis and visualizations. | Streamlit, pandas, Plotly, and modular processing and insights code. |
 
----
+## More projects
 
-## Projects
-
-### NLP & Deep Learning
-
-**[Product Attribute Extractor — NER](https://github.com/boumalaksiham/Product-NER-Attribute-Extraction)**
-Fine-tuned DistilBERT token classifier with BIO tagging to extract 9 attribute types (brand, model, color, storage, size, material, network, generation, count) from raw product titles. Handles multi-word entities like "Le Creuset" and "Deep Purple".
-`DistilBERT` `BIO Tagging` `seqeval` `HuggingFace` · **F1=1.00 on BRAND · F1=0.86 on STORAGE**
-
-**[Hierarchical Taxonomy Classifier](https://github.com/boumalaksiham/Taxonomy-Classifier-DistilBERT)**
-Shared-encoder multi-task architecture — one DistilBERT encoder feeding 3 independent classification heads (5 / 12 / 18 classes) trained simultaneously. Predicts full 3-level category paths from product titles.
-`DistilBERT` `PyTorch` `Multi-task Learning` · **100% Level 1 · 81% Level 3 accuracy**
-
-**[Scientific Paper Analysis — 5-Agent NLP System](https://github.com/boumalaksiham/Final-Project-AI)**
-Five specialized agents — Summarization (BART), Citation Analysis (NetworkX), Methodology Extractor (spaCy NER), Critical Analysis, Coordinator — analyzing arXiv papers end-to-end. Evaluated with ROUGE and full ablation studies.
-`BART` `spaCy` `NetworkX` `HuggingFace` · **+0.31 ROUGE-1 over single-model baseline**
-
----
-
-### Computer Vision
-
-**[Product Image Quality Scorer](https://github.com/boumalaksiham/Product-Image-Quality-Scorer)**
-Two-stage scorer: EfficientNet-B0 (pretrained ImageNet, MSE regression head) + 7 classical CV signals (Laplacian sharpness, Canny edge density, brightness, contrast, colorfulness, resolution, noise). Scores images 1–5 and generates actionable seller feedback.
-`EfficientNet-B0` `OpenCV` `torchvision` `PyTorch` · **Correct ranking on all test images**
-
-**[Nexus-AI — Facial Recognition Attendance System](https://github.com/boumalaksiham/Nexus-AI-Attendance)**
-Real-time multi-agent attendance system using dlib HOG + 128D face embeddings. Three dashboards (Admin, Professor, Student), AI-generated absence reports via OpenAI API. B.A. senior thesis.
-`OpenCV` `dlib` `Flask` `OpenAI API` · **Departmental Honors · Zero manual tracking**
-
-**[Arabic Handwriting CNN](https://github.com/boumalaksiham/Arabic-Handwriting-CNN)**
-CNN trained from scratch on 13,440 labeled images across all 28 Arabic characters. Data augmentation, dropout regularization, confusion matrix analysis on character pairs with highest confusion.
-`PyTorch` `CNN` `Data Augmentation` · **92.4% test accuracy**
-
----
-
-### LLM Systems & Observability
-
-**[AI Guardian — LLM Observability Platform](https://github.com/boumalaksiham/ai_guardian_project)**
-Production-grade monitoring for LLM applications. Python SDK (`@track_llm_call`) captures latency, token usage, cost, quality scores, and hallucination risk without changing application code. Threshold-based alerting, RAG pipeline tracing, live React dashboard via WebSockets.
-`FastAPI` `PostgreSQL` `React` `Python SDK` `LangChain` · **Works with any LLM provider**
-
----
-
-### ML & Data Science
-
-**[Entity Resolution — Product Matching](https://github.com/boumalaksiham/Entity-Resolution-Product-Matching-Pipeline)**
-Two-stage pipeline combining semantic similarity (Sentence Transformers) with an Attribute Guard layer that detects model code, storage, and size conflicts and penalizes the score multiplicatively.
-`Sentence Transformers` `PyTorch` `scikit-learn` · **78% → 92%+ accuracy**
-
-**Energy Infrastructure Forecasting** *(Preflet, 2022)*
-Analyzed 10+ datasets to forecast transmission line performance and detect anomalies. Compared Random Forest, XGBoost, and regression baselines; XGBoost reached F1=0.84 on imbalanced anomaly detection. Built OpenCV prototype classifying tower types (87% accuracy).
-`XGBoost` `Random Forest` `OpenCV` `Python`
-
-**Product Launch Strategy** *(CaffeBerry.co, 2024)*
-Integrated 10+ datasets (sales, sentiment, pricing, seasonality); applied clustering for customer segmentation and regression for price elasticity modeling. A/B tested pricing tiers. One product variant greenlit based on analysis output.
-`Python` `R` `Tableau` `A/B Testing` `Clustering`
-
----
-
-## Stack
-
-| Area | Tools |
+| Project | Methods and scope |
 |---|---|
-| NLP & Deep Learning | BERT · DistilBERT · Sentence Transformers · HuggingFace · PyTorch · BIO Tagging · seqeval · BART · spaCy |
-| Computer Vision | EfficientNet · ResNet · OpenCV · Laplacian · Canny · torchvision · dlib · CNNs |
-| ML & Data Science | scikit-learn · XGBoost · Random Forest · Pandas · NumPy · Tableau · R · A/B Testing · ROUGE |
-| LLM & Agents | LangChain · AutoGen · LlamaIndex · OpenAI API · RAG · Prompt Engineering · GPT-4 |
-| Infrastructure | FastAPI · PostgreSQL · React · Flask · Python · SQL · Git · Linux |
-| Languages | English (fluent) · French (fluent) · Arabic (native) |
+| [Credit Risk Classification](https://github.com/boumalaksiham/Credit-Risk-Project) | R workflow for German credit data: preprocessing, logistic regression, SVM, Random Forest, model comparison, and exploratory fairness analysis. |
+| [Entity Resolution / Product Matching](https://github.com/boumalaksiham/Entity-Resolution-Product-Matching-Pipeline) | Sentence-transformer similarity with regex-based attribute conflict penalties. A small curated dataset supports demonstration rather than a production benchmark. |
+| [Hierarchical Taxonomy Classification](https://github.com/boumalaksiham/Taxonomy-Classifier-DistilBERT) | Shared DistilBERT encoder with three classification heads for product category paths. Small curated-data experiment; checkpoint-selection metrics are validation results. |
+| [Product Attribute Extraction](https://github.com/boumalaksiham/Product-NER-Attribute-Extraction) | DistilBERT token classification with BIO labels and span-level evaluation. Small curated-data experiment. |
+| [Product Image Quality](https://github.com/boumalaksiham/Product-Image-Quality-Scorer) | EfficientNet-B0 and classical image-quality signals; seven synthetic images demonstrate the workflow, without establishing generalization. |
+| [Arabic Handwriting Recognition](https://github.com/boumalaksiham/Arabic-Handwriting-CNN) | TensorFlow/Keras CNN for 28 Arabic character classes, with Flask inference and React interface source. Setup gaps are documented in the repository. |
 
----
+**Planned project:** [Manufacturing Defect Detection](https://github.com/boumalaksiham/Defect-Detection) currently contains a design document only. Implementation and evaluation are not yet available in that repository.
 
-## Education & Experience
+## Research and analytics experience
 
-| | |
+- **Northeastern University:** research apprenticeship on LLM voice-assistant privacy and safety; teaching assistance in databases.
+- **Schneider Electric:** experimental evaluation of multi-agent LLM systems and communication of technical findings.
+- **CaffeBerry.co:** business analytics practicum supporting planning through data analysis and Tableau dashboards. This was not an operating-business deployment.
+- **Preflet:** analysis and recommendations concerning energy infrastructure.
+- **Vivi Dynamics:** web development and research experience through AMRE.
+
+These experiences are distinct from the public project repositories above. Employer/client source code and current research materials are not represented as public deliverables here.
+
+## Tools
+
+| Area | Tools used across my projects |
 |---|---|
-| 2025 – 2027 | **M.S. Artificial Intelligence** — Northeastern University, Khoury College · ML concentration |
-| Summer 2024 | **Data Scientist & Research Assistant** — Schneider Electric · Built multi-agent LLM pipelines (AutoGen, LangChain, LlamaIndex) with GPT-4, Claude, Gemini · Evaluated frameworks across accuracy, latency, cost · Findings delivered to AI leadership |
-| Spring 2024 | **Business Analyst** — CaffeBerry.co · Data-backed product launch strategy · Tableau dashboards · A/B testing |
-| Summer 2023 | **Web Developer & Research Assistant** — Vivi Dynamics · AI tool evaluation study published in technical report |
-| Summer 2022 | **Data Analyst** — Preflet · ML forecasting models · Computer vision prototype |
-| 2021 – 2025 | **B.A. Computer Science & Data Science** — The College of Wooster · Departmental Honors |
+| Programming and data | Python, SQL, R, pandas, NumPy, Tableau |
+| Machine learning | scikit-learn, PyTorch, TensorFlow/Keras, XGBoost |
+| NLP and LLM systems | Hugging Face, DistilBERT, Sentence Transformers, BART, spaCy, LangChain, AutoGen, LlamaIndex |
+| Applications and databases | Flask, FastAPI, React, Streamlit, SQLite, PostgreSQL |
+| Evaluation | Cross-validation, baseline comparisons, ablations, classification metrics, statistical testing |
+
+## Education
+
+- **M.S. Artificial Intelligence**, Northeastern University, 2025–2027 (expected); concentration in Machine Learning.
+- **B.A. Computer Science**, The College of Wooster, 2021–2025; minors in Data Science and Mathematics; departmental honors.
+
+I am interested in applied AI research, data science, and data analytics opportunities, as well as PhD research involving NLP, LLM evaluation, privacy, and safety.
