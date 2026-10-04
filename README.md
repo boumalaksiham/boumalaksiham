@@ -1,62 +1,111 @@
 # Siham Boumalak
 
-**M.S. candidate in Artificial Intelligence · Northeastern University · Machine Learning concentration · Expected 2027**
+**M.S. Artificial Intelligence · Northeastern University · Machine Learning concentration · Expected May 2027**
 
-I work at the intersection of applied AI research, data analysis, and software development. I am interested in asking useful questions, designing careful experiments, and building systems whose behavior can be evaluated and explained.
+I study how AI systems behave, where they fail, and how their outputs can be evaluated. My work spans **LLM privacy and safety, multi-agent systems, machine learning, and applied data analysis**.
 
-At Northeastern, my research apprenticeship examines privacy and safety risks of LLM-based voice assistants, with a current focus on privacy across users in shared households. I also serve as a Teaching Assistant for **CS 3200: Introduction to Databases**.
+Across research and client projects, I use **Python, SQL, and R** to prepare data, investigate questions, compare methods, and communicate findings. I also build dashboards and applications that help people inspect results and use them in their work.
 
-Previously, I investigated multi-agent LLM systems at Schneider Electric through the College of Wooster's Applied Methods and Research Experience program. Our team evaluated models and agent frameworks for reliability, reasoning quality, latency, and cost, and shared findings with the data science team.
+[Portfolio](https://boumalaksiham.github.io/) · [LinkedIn](https://www.linkedin.com/in/siham-boumalak/) · [Email](https://mail.google.com/mail/?view=cm&fs=1&to=boumaleksiham%40gmail.com) · [All repositories](https://github.com/boumalaksiham?tab=repositories)
 
-[LinkedIn](https://www.linkedin.com/in/siham-boumalak/) · [Portfolio](https://boumalaksiham.github.io/) · [All repositories](https://github.com/boumalaksiham?tab=repositories)
+## Research Experience
 
-## Selected projects
+### Northeastern University — Research Apprenticeship
+**Privacy & Safety Risks of LLM-Based Voice Assistants**
 
-| Project | Question or purpose | Implementation |
-|---|---|---|
-| [Scientific Paper Triage](https://github.com/boumalaksiham/Final-Project-AI) | Help researchers assess a paper's contribution, methods, limitations, and relevance. | BART, spaCy, NetworkX; modular components, baseline comparisons, and ablation scripts. |
-| [AI Guardian](https://github.com/boumalaksiham/ai_guardian_project) | Make LLM latency, token usage, estimated cost, failures, and workflow traces visible. | Python SDK, FastAPI, PostgreSQL, React; an engineering prototype with heuristic evaluation signals and a polling dashboard. |
-| [Nexus-AI](https://github.com/boumalaksiham/Nexus-AI-Attendance) | Combine face recognition and conversational attendance support. | Undergraduate honors thesis using Flask, SQLite, OpenCV, dlib face embeddings, and specialized agents. The published source has restoration gaps documented in its README. |
-| [Gene Expression Classification](https://github.com/boumalaksiham/gene-expression-classification) | Compare classifiers for ALL versus AML using high-dimensional microarray data. | scikit-learn pipelines, feature selection within cross-validation, logistic regression, Random Forest, and XGBoost. |
-| [Breast Cancer Transcriptomics](https://github.com/boumalaksiham/breast_cancer_transcriptomics) | Explore tumor-normal expression differences in a processed GSE42568 subset. | PCA, Welch's tests, Benjamini–Hochberg correction, annotation, and pathway enrichment. |
-| [Interactive BI Dashboard](https://github.com/boumalaksiham/interactive-BI-dashboard) | Turn uploaded business data into interactive analysis and visualizations. | Gradio, pandas, Plotly, and modular processing and insights code. |
+My current faculty-mentored research examines privacy and safety risks in LLM-based voice assistants, including how information may be retained or exposed across users in shared households.
 
-## More projects
+- Review research literature and translate research questions into controlled experiments.
+- Develop experimental procedures, comparison conditions, and repeated-query protocols.
+- Examine response consistency and distinguish supported retrieval or inference from unsupported claims.
+- Document observations, methodological limitations, and questions for discussion with research mentors.
 
-| Project | Methods and scope |
+### Schneider Electric — Applied Methods and Research Experience
+
+Investigated multi-agent LLM systems through the College of Wooster’s Applied Methods and Research Experience program.
+
+- Evaluated LLMs and agent frameworks across reliability, reasoning quality, latency, and cost.
+- Used Python, AutoGen, LangChain, and LlamaIndex to investigate system behavior and compare approaches.
+- Reported noteworthy findings to the data science team for further investigation.
+- Presented technical findings and recommendations to AI and sustainability teams.
+
+### The College of Wooster — Undergraduate Honors Thesis
+**Nexus-AI: A Multi-Agent Approach to Smart Attendance**
+
+Developed a prototype combining face recognition, attendance records, and specialized agents for conversational attendance support.
+
+- Built the application using Python, Flask, SQLite, OpenCV, and dlib-based face embeddings.
+- Evaluated recognition behavior with 15 participants under varying lighting, distance, and viewing conditions.
+- Examined recognition errors and practical limitations alongside privacy considerations.
+- Presented the research through a thesis, poster, and research symposium.
+
+[Thesis project repository →](https://github.com/boumalaksiham/Nexus-AI-Attendance)
+
+## Data Analysis and Applied Experience
+
+| Experience | Contribution |
 |---|---|
-| [Credit Risk Classification](https://github.com/boumalaksiham/Credit-Risk-Project) | R workflow for German credit data: preprocessing, logistic regression, SVM, Random Forest, model comparison, and exploratory fairness analysis. |
-| [Entity Resolution / Product Matching](https://github.com/boumalaksiham/Entity-Resolution-Product-Matching-Pipeline) | Sentence-transformer similarity with regex-based attribute conflict penalties. A small curated dataset supports demonstration rather than a production benchmark. |
-| [Hierarchical Taxonomy Classification](https://github.com/boumalaksiham/Taxonomy-Classifier-DistilBERT) | Shared DistilBERT encoder with three classification heads for product category paths. Small curated-data experiment; checkpoint-selection metrics are validation results. |
-| [Product Attribute Extraction](https://github.com/boumalaksiham/Product-NER-Attribute-Extraction) | DistilBERT token classification with BIO labels and span-level evaluation. Small curated-data experiment. |
-| [Product Image Quality](https://github.com/boumalaksiham/Product-Image-Quality-Scorer) | EfficientNet-B0 and classical image-quality signals; seven synthetic images demonstrate the workflow, without establishing generalization. |
-| [Arabic Handwriting Recognition](https://github.com/boumalaksiham/Arabic-Handwriting-CNN) | TensorFlow/Keras CNN for 28 Arabic character classes, with Flask inference and React interface source. Setup gaps are documented in the repository. |
+| **CaffeBerry.co — Business Analytics Practicum** | Conducted market, competitor, and trend analysis and developed Tableau dashboards to support pre-launch business planning. Presented recommendations to the client, who used them in planning. |
+| **Preflet — Energy Infrastructure Analysis** | Analyzed energy infrastructure questions and communicated findings and recommendations to Preflet. |
+| **Vivi Dynamics — AMRE Internship** | Contributed to web development and research through the College of Wooster’s Applied Methods and Research Experience program. |
+| **Northeastern University — Teaching Assistant** | Support students in **CS 3200: Introduction to Databases**, including SQL, relational schema design, normalization, indexing, and database debugging. |
 
-**Planned project:** [Manufacturing Defect Detection](https://github.com/boumalaksiham/Defect-Detection) currently contains a design document only. Implementation and evaluation are not yet available in that repository.
+## Research and Engineering Projects
 
-## Research and analytics experience
+### Machine Learning and Biomedical Data Analysis
 
-- **Northeastern University:** research apprenticeship on LLM voice-assistant privacy and safety; teaching assistance in databases.
-- **Schneider Electric:** experimental evaluation of multi-agent LLM systems and communication of technical findings.
-- **CaffeBerry.co:** business analytics practicum supporting planning through data analysis and Tableau dashboards. This was not an operating-business deployment.
-- **Preflet:** analysis and recommendations concerning energy infrastructure.
-- **Vivi Dynamics:** web development and research experience through AMRE.
-
-These experiences are distinct from the public project repositories above. Employer/client source code and current research materials are not represented as public deliverables here.
-
-## Tools
-
-| Area | Tools used across my projects |
+| Project | Research question and approach |
 |---|---|
-| Programming and data | Python, SQL, R, pandas, NumPy, Tableau |
-| Machine learning | scikit-learn, PyTorch, TensorFlow/Keras, XGBoost |
-| NLP and LLM systems | Hugging Face, DistilBERT, Sentence Transformers, BART, spaCy, LangChain, AutoGen, LlamaIndex |
-| Applications and databases | Flask, FastAPI, React, Streamlit, SQLite, PostgreSQL |
-| Evaluation | Cross-validation, baseline comparisons, ablations, classification metrics, statistical testing |
+| **[Gene Expression Classification](https://github.com/boumalaksiham/gene-expression-classification)** | Compare logistic regression, Random Forest, and XGBoost for **acute lymphoblastic versus acute myeloid leukemia classification** using high-dimensional gene-expression data. Uses scikit-learn pipelines with feature selection inside cross-validation, with saved evaluation figures and tables. |
+| **[Breast Cancer Transcriptomics](https://github.com/boumalaksiham/breast_cancer_transcriptomics)** | Investigate tumor–normal expression differences in a processed **GSE42568 microarray dataset**. Combines PCA, Welch’s tests, Benjamini–Hochberg false discovery rate correction, gene annotation, and pathway enrichment. |
+| **[Credit Risk Classification](https://github.com/boumalaksiham/Credit-Risk-Project)** | Analyze German credit data in **R**, comparing logistic regression, SVM, and Random Forest. Includes preprocessing, exploratory analysis, model comparison, and exploratory fairness checks. |
+
+### NLP, LLM Systems, and Evaluation
+
+| Project | What I built and evaluated |
+|---|---|
+| **[Scientific Paper Triage](https://github.com/boumalaksiham/Final-Project-AI)** | A modular prototype for assessing scientific papers’ contributions, methods, limitations, and relevance. Combines **BART summarization, spaCy, NetworkX, structured extraction, and heuristic analysis**, with baseline and ablation evaluation scripts. |
+| **[AI Guardian](https://github.com/boumalaksiham/ai_guardian_project)** | An **LLM observability prototype** with a Python SDK, FastAPI backend, PostgreSQL database, and React dashboard. Tracks calls, token usage, estimated costs, failures, and workflow traces. Quality signals are heuristic indicators rather than measures of factual correctness. |
+| **[Entity Resolution / Product Matching](https://github.com/boumalaksiham/Entity-Resolution-Product-Matching-Pipeline)** | A product-title matching prototype combining **Sentence Transformer embeddings** with regex-based attribute conflict penalties. Includes threshold calibration and evaluation on a small curated dataset. |
+| **[Product Attribute Extraction](https://github.com/boumalaksiham/Product-NER-Attribute-Extraction)** | A **DistilBERT token-classification** experiment extracting nine product attribute types from titles using BIO labels and span-level evaluation. |
+| **[Product Taxonomy Classification](https://github.com/boumalaksiham/Taxonomy-Classifier-DistilBERT)** | A shared **DistilBERT encoder with three classification heads** for product category levels. Uses a small curated dataset; checkpoint-selection results are validation metrics. |
+
+### Analytics Applications and Computer Vision
+
+| Project | Purpose and implementation |
+|---|---|
+| **[Interactive BI Dashboard](https://github.com/boumalaksiham/interactive-BI-dashboard)** | A **Gradio, pandas, and Plotly** application for exploring CSV and Excel tables through filters, visualizations, descriptive insights, and exports. |
+| **[Arabic Handwriting Recognition](https://github.com/boumalaksiham/Arabic-Handwriting-CNN)** | A **TensorFlow/Keras CNN** prototype for recognizing 28 isolated Arabic character classes, with Flask inference and React interface source. Repository documentation explains the setup requirements and evaluation limitations. |
+| **[Product Image Quality](https://github.com/boumalaksiham/Product-Image-Quality-Scorer)** | A demonstration combining **EfficientNet-B0 and classical computer vision signals** to assess product-image quality, using seven synthetic images. |
+
+**Project in planning:** [Manufacturing Defect Detection](https://github.com/boumalaksiham/Defect-Detection) contains a design document for autoencoder-based anomaly detection. Implementation and evaluation are not yet included.
+
+## Technical Skills
+
+| Area | Tools and methods |
+|---|---|
+| **Programming and data analysis** | Python, SQL, R, pandas, NumPy |
+| **Statistical analysis and evaluation** | Exploratory data analysis, statistical testing, multiple-testing correction, cross-validation, classification metrics, baseline comparisons, ablation studies |
+| **Machine learning and computer vision** | scikit-learn, PyTorch, TensorFlow/Keras, XGBoost, OpenCV |
+| **NLP and LLM systems** | Hugging Face Transformers, DistilBERT, Sentence Transformers, BART, spaCy, AutoGen, LangChain, LlamaIndex |
+| **Databases and applications** | MySQL, PostgreSQL, SQLite, Flask, FastAPI, React, Gradio |
+| **Visualization and reporting** | Tableau, Plotly, evaluation figures, dashboards, technical presentations |
 
 ## Education
 
-- **M.S. Artificial Intelligence**, Northeastern University, 2025–2027 (expected); concentration in Machine Learning.
-- **B.A. Computer Science**, The College of Wooster, 2021–2025; minors in Data Science and Mathematics; departmental honors.
+**Northeastern University**  
+M.S. in Artificial Intelligence · Machine Learning concentration  
+2025–2027 · Expected May 2027
 
-I am interested in applied AI research, data science, and data analytics opportunities, as well as PhD research involving NLP, LLM evaluation, privacy, and safety.
+**The College of Wooster**  
+B.A. in Computer Science · Minors in Data Science and Mathematics  
+2021–2025 · GPA: **3.87/4.00**  
+Departmental Honors · Dean’s List every semester · Pi Mu Epsilon
+
+## Research and Career Interests
+
+I am interested in **research assistant, data analyst, data scientist, and applied AI/ML opportunities** where careful experimentation, reliable data, and clear communication matter.
+
+My longer-term research interests include **NLP, LLM evaluation, privacy and safety, and machine learning for biomedical data**.
+
+[Explore my portfolio →](https://boumalaksiham.github.io/) · [Contact me →](https://mail.google.com/mail/?view=cm&fs=1&to=boumaleksiham%40gmail.com)
